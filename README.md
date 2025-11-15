@@ -2,6 +2,41 @@
 
 A modern, responsive website template based on a clean SaaS landing page design. Perfect for customer service software, SaaS products, or any business website.
 
+## 📁 Project Versions
+
+This repository contains **two versions** of the same template:
+
+1. **Next.js + React + TypeScript** (Recommended) - `/nextjs-app/`
+   - Modern React framework with TypeScript
+   - Full documentation in [`nextjs-app/README.md`](nextjs-app/README.md)
+   - **Use this for Vercel deployment**
+
+2. **HTML + CSS + JavaScript** (Simple) - Root directory
+   - Vanilla HTML, CSS, and JavaScript
+   - No build process required
+   - Best for static hosting
+
+## 🚀 Vercel Deployment
+
+To deploy the Next.js version on Vercel:
+
+### Option 1: Vercel Dashboard (Recommended)
+1. Go to your Vercel project settings
+2. Under "Build & Development Settings":
+   - **Root Directory**: `nextjs-app`
+   - **Framework Preset**: Next.js
+   - **Build Command**: `npm run build`
+   - **Output Directory**: `.next`
+   - **Install Command**: `npm install`
+
+### Option 2: Deploy Fresh
+1. Delete the current Vercel project
+2. Import the repository again
+3. Set Root Directory to `nextjs-app`
+4. Deploy
+
+The `vercel.json` in the root is configured to build from the `nextjs-app` directory.
+
 ## Features
 
 - **Fully Responsive** - Works seamlessly on desktop, tablet, and mobile devices
