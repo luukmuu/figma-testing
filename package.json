@@ -1,0 +1,22 @@
+{
+  "name": "figma-testing",
+  "version": "1.0.0",
+  "description": "Landing page with automated tests",
+  "scripts": {
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:report": "playwright show-report"
+  },
+  "keywords": [
+    "landing-page",
+    "testing",
+    "playwright"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.40.0"
+  }
+}

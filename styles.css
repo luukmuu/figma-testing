@@ -1,0 +1,381 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    color: #101828;
+    background-color: #ffffff;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+/* Header */
+.header {
+    padding: 20px 0;
+    border-bottom: 1px solid #EAECF0;
+    background-color: #ffffff;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #101828;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #667085;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: #101828;
+}
+
+.dropdown .arrow {
+    font-size: 12px;
+    margin-left: 4px;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+/* Buttons */
+.btn {
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-text {
+    background: transparent;
+    color: #344054;
+}
+
+.btn-text:hover {
+    background: #F9FAFB;
+}
+
+.btn-primary {
+    background: #7F56D9;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #6941C6;
+}
+
+.btn-outline {
+    background: white;
+    color: #344054;
+    border: 1px solid #D0D5DD;
+}
+
+.btn-outline:hover {
+    background: #F9FAFB;
+}
+
+/* Hero Section */
+.hero {
+    padding: 96px 0;
+    background: linear-gradient(180deg, #FCFAFF 0%, #FFFFFF 100%);
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: center;
+}
+
+.hero-title {
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #101828;
+    margin-bottom: 24px;
+    letter-spacing: -0.02em;
+}
+
+.hero-description {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #667085;
+    margin-bottom: 48px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.hero-image {
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Social Proof */
+.social-proof {
+    padding: 96px 0;
+    background: #ffffff;
+}
+
+.social-proof-text {
+    text-align: center;
+    color: #667085;
+    font-size: 16px;
+    margin-bottom: 32px;
+}
+
+.company-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+    flex-wrap: wrap;
+}
+
+.company-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #101828;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Features Section */
+.features {
+    padding: 96px 0;
+    background: #ffffff;
+}
+
+.features-header {
+    text-align: center;
+    max-width: 768px;
+    margin: 0 auto 64px;
+}
+
+.section-label {
+    color: #6941C6;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #101828;
+    margin-bottom: 20px;
+    letter-spacing: -0.02em;
+}
+
+.section-description {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #667085;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 48px;
+}
+
+.feature-card {
+    text-align: center;
+}
+
+.feature-icon {
+    width: 48px;
+    height: 48px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F9F5FF;
+    border-radius: 10px;
+}
+
+.feature-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #101828;
+    margin-bottom: 8px;
+}
+
+.feature-description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #667085;
+}
+
+/* Testimonial Section */
+.testimonial {
+    padding: 96px 0;
+    background: #F9FAFB;
+}
+
+.testimonial-card {
+    background: linear-gradient(135deg, #53389E 0%, #7F56D9 100%);
+    border-radius: 16px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 400px;
+}
+
+.testimonial-content {
+    padding: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+.stars {
+    font-size: 20px;
+    margin-bottom: 32px;
+}
+
+.testimonial-quote {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-bottom: 32px;
+    border: none;
+}
+
+.author-name {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.author-title {
+    font-size: 14px;
+    opacity: 0.9;
+    margin-bottom: 32px;
+}
+
+.testimonial-dots {
+    display: flex;
+    gap: 8px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.dot.active {
+    background: white;
+}
+
+.testimonial-image {
+    background: #D1D5DB;
+    overflow: hidden;
+}
+
+.testimonial-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+
+    .hero-title {
+        font-size: 48px;
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .testimonial-card {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hero-title {
+        font-size: 36px;
+    }
+
+    .hero-description {
+        font-size: 18px;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .company-logos {
+        gap: 32px;
+    }
+
+    .testimonial-content {
+        padding: 48px 32px;
+    }
+
+    .testimonial-quote {
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untitled UI - Customer Service Software</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" data-testid="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo" data-testid="logo">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="16" cy="16" r="12" fill="#7F56D9"/>
+                        <circle cx="16" cy="16" r="6" fill="white"/>
+                    </svg>
+                    <span>Untitled UI</span>
+                </div>
+                <ul class="nav-links" data-testid="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#products">Products <span class="arrow">▼</span></a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#resources">Resources <span class="arrow">▼</span></a>
+                    </li>
+                    <li><a href="#pricing">Pricing</a></li>
+                </ul>
+                <div class="auth-buttons" data-testid="auth-buttons">
+                    <button class="btn btn-text">Log in</button>
+                    <button class="btn btn-primary">Sign up</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" data-testid="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title" data-testid="hero-title">
+                        Customer service software for customer-first teams
+                    </h1>
+                    <p class="hero-description" data-testid="hero-description">
+                        The best customer service software for customer-first teams. Industry-leading email and live chat support.
+                    </p>
+                    <div class="hero-buttons" data-testid="hero-buttons">
+                        <button class="btn btn-outline">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="2"/>
+                                <path d="M8 7L12 10L8 13V7Z" fill="currentColor"/>
+                            </svg>
+                            Demo
+                        </button>
+                        <button class="btn btn-primary">Sign up</button>
+                    </div>
+                </div>
+                <div class="hero-image" data-testid="hero-image">
+                    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&h=600&fit=crop" alt="Customer service representative">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof Section -->
+    <section class="social-proof" data-testid="social-proof">
+        <div class="container">
+            <p class="social-proof-text">Join 4,000+ companies already growing</p>
+            <div class="company-logos" data-testid="company-logos">
+                <div class="company-logo">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="#7F56D9"/>
+                        <path d="M2 17L12 22L22 17" stroke="#7F56D9" stroke-width="2"/>
+                    </svg>
+                    <span>Layers</span>
+                </div>
+                <div class="company-logo">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" fill="#10B981"/>
+                    </svg>
+                    <span>Sisyphus</span>
+                </div>
+                <div class="company-logo">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="10" fill="#3B82F6"/>
+                        <circle cx="12" cy="12" r="5" fill="white"/>
+                    </svg>
+                    <span>Circoleos</span>
+                </div>
+                <div class="company-logo">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="3" y="3" width="18" height="18" rx="2" fill="#8B5CF6"/>
+                    </svg>
+                    <span>Catalog</span>
+                </div>
+                <div class="company-logo">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="10" stroke="#7F56D9" stroke-width="2"/>
+                        <circle cx="12" cy="12" r="5" fill="#7F56D9"/>
+                    </svg>
+                    <span>Quotient</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" data-testid="features-section">
+        <div class="container">
+            <div class="features-header">
+                <p class="section-label">Features</p>
+                <h2 class="section-title" data-testid="features-title">
+                    All you need to run your finances effectively
+                </h2>
+                <p class="section-description">
+                    Open a full-featured account in with virtual cards in less than 5 minutes.
+                </p>
+            </div>
+            <div class="features-grid" data-testid="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 7H4C2.89543 7 2 7.89543 2 9V19C2 20.1046 2.89543 21 4 21H20C21.1046 21 22 20.1046 22 19V9C22 7.89543 21.1046 7 20 7Z" stroke="#7F56D9" stroke-width="2"/>
+                            <path d="M16 3H8V7H16V3Z" stroke="#7F56D9" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Unlimited cards</h3>
+                    <p class="feature-description">
+                        Give your team the autonomy they need with access to as many cards as they need. Authorize purchases with a click. Simple.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="#7F56D9" stroke-width="2"/>
+                            <path d="M2 17L12 22L22 17" stroke="#7F56D9" stroke-width="2"/>
+                            <path d="M2 12L12 17L22 12" stroke="#7F56D9" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Easy expense policies</h3>
+                    <p class="feature-description">
+                        Every card comes with configurable spending limits, purchase restrictions, and subscriptions for each employee and team.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 3V21H21" stroke="#7F56D9" stroke-width="2"/>
+                            <path d="M7 16L12 11L16 15L21 10" stroke="#7F56D9" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Advanced analytics</h3>
+                    <p class="feature-description">
+                        An all-in-one platform that helps you balance everything your team need to be happy and your finances in order.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="3" stroke="#7F56D9" stroke-width="2"/>
+                            <path d="M12 5V3M12 21V19M5 12H3M21 12H19M7.05 7.05L5.64 5.64M18.36 18.36L16.95 16.95M16.95 7.05L18.36 5.64M5.64 18.36L7.05 16.95" stroke="#7F56D9" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Real-time visibility on spending</h3>
+                    <p class="feature-description">
+                        No more unpleasant surprises. Our in-app top line view of your business spending means you can see who's spending what, when, & where.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="3" y="3" width="7" height="7" stroke="#7F56D9" stroke-width="2"/>
+                            <rect x="14" y="3" width="7" height="7" stroke="#7F56D9" stroke-width="2"/>
+                            <rect x="14" y="14" width="7" height="7" stroke="#7F56D9" stroke-width="2"/>
+                            <rect x="3" y="14" width="7" height="7" stroke="#7F56D9" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Connect the tools you already use</h3>
+                    <p class="feature-description">
+                        Explore 100+ integrations that make your day-to-day workflow more efficient and familiar. Plus, our extensive developer tools.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 15C21 15.5304 20.7893 16.0391 20.4142 16.4142C20.0391 16.7893 19.5304 17 19 17H7L3 21V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V15Z" stroke="#7F56D9" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Our people make the difference</h3>
+                    <p class="feature-description">
+                        We're an extension of your customer service team, and all of our resources are free. Chat to our friendly team 24/7 when you need help.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonial" data-testid="testimonial-section">
+        <div class="container">
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <div class="stars" data-testid="testimonial-stars">
+                        <span>⭐</span>
+                        <span>⭐</span>
+                        <span>⭐</span>
+                        <span>⭐</span>
+                        <span>⭐</span>
+                    </div>
+                    <blockquote class="testimonial-quote" data-testid="testimonial-quote">
+                        Love the simplicity of the service and the prompt customer support. We can't imagine working without it.
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <p class="author-name">— Renee Wells</p>
+                        <p class="author-title">Product Designer, Quotient</p>
+                    </div>
+                    <div class="testimonial-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+                <div class="testimonial-image">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=500&fit=crop" alt="Renee Wells">
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
